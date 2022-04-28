@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: courier, sans-serif;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2ecc71;
+}
