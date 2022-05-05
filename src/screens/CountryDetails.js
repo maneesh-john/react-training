@@ -5,7 +5,8 @@ import { WEATHER_API } from "../utils/constants";
 import Card from "../components/Card";
 
 class CountryDetails extends React.Component{
-
+  
+  // const context = React.useContext(AppContext)
   static contextType = AppContext;
 
   getWeatherDetails = () => {
