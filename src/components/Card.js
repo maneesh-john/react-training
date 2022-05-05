@@ -19,11 +19,14 @@ const styles = {
     margin: "0 15%",
     marginBottom: "15px",
     background: "#fff",
-    padding: "7px 20px",
+    padding: "20px",
     borderRadius: "5px",
     textAlign: "left",
     boxShadow: "0 10px 8px rgba(0,0,0,.25)",
-    cursor: "pointer"
+    cursor: "pointer",
+    display: "flex",
+    flexDirection: "column",
+    width: "100%"
   },
 }
 

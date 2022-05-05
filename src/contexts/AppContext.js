@@ -2,22 +2,19 @@ import React from "react";
 
 export const AppContext = React.createContext(null);
 
-function AppProvider(props) {
-  
-  const [posts, setPosts] = React.useState([]);
-  const [isLoading, setIsLoading] = React.useState(false); // useReducer
+export const AppProvider = (props) => {
 
-  return (
+  const [countryData, setCountryData] = React.useState({});
+  const [weatherData, setWeatherData] = React.useState({});
+
+  return(
     <AppContext.Provider value={{
-        posts: posts,
-        setPosts: setPosts,
-        isLoading: isLoading,
-        setLoader: setIsLoading
-      }}
-    >
+      country: countryData,
+      setCountry: setCountryData,
+      weather: weatherData,
+      setWeather: setWeatherData
+    }}>
       {props.children}
     </AppContext.Provider>
   );
 }
-
-export default AppProvider;
